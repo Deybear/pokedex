@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Navigation.css';
+
+import logo from "../images/dex_logo.svg";
 
 function Navigation()
 {
     return (
 
-        <nav>
+        <nav className='navigation'>
 
             <ul>
+
+                <li> <img src={logo}/> </li>
 
                 <li> <Link to="/">Home</Link> </li>
                 <li> <Link to="/about">About</Link> </li>

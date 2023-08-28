@@ -6,8 +6,6 @@ function Pokedex()
 
         <div>
 
-            <h1>POKÉDEX</h1>
-
         </div>
 
     );
