@@ -74,6 +74,14 @@ const Header = () => {
             {/* - - - || Pokémon Type || - - - */}
             <div className="pokemon_type">
 
+              {/* - - - || v2.0.0 || - - - */}
+
+              {/* {pokemon.types.map((item, index) => {
+
+                  return(<img key={index} src={require(`../images/${item.type.name}.svg`)} alt={item.type.name}/>);
+
+              })} */}
+
               {pokemon.types[0] ? (<img src={require(`../images/${pokemon.types[0].type.name}.svg`)} alt={pokemon.types[0].type.name}/>) : null}
               {pokemon.types[1] ? (<img src={require(`../images/${pokemon.types[1].type.name}.svg`)} alt={pokemon.types[1].type.name}/>) : null}
 
