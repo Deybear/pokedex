@@ -12,11 +12,11 @@ function Navigation()
 
             <ul>
 
-                <li> <img src={logo}/> </li>
+                <li className='nav_logo'> <img src={logo}/> </li>
 
-                <li> <Link to="/">Home</Link> </li>
-                <li> <Link to="/about">About</Link> </li>
-                <li> <Link to="/pokedex">Pokedex</Link> </li>
+                <li className='nav_item'> <Link to="/">Home</Link> </li>
+                <li className='nav_item'> <Link to="/about">About</Link> </li>
+                <li className='nav_item'> <Link to="/pokedex">Pokedex</Link> </li>
 
             </ul>
 

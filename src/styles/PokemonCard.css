@@ -39,14 +39,15 @@
     justify-content: start;
 }
 
-/* - - - || IMAGE || - - - */
+/* - - - || ID || - - - */
 .pokemon_id
 {
-    top: 0;
+    top: 40px;
     margin: 0;
-    right: 30px;
+    right: 40px;
     font-size: 8vw;
     font-weight: 900;
+    line-height: 100%;
     color: transparent;
     position: absolute;
     -webkit-text-stroke: 1.5px #000000;
@@ -75,6 +76,7 @@
     left: 40px;
     display: flex;
     position: relative;
+    align-items: center;
 }
 
 /* - - - || SHAPES || - - - */
@@ -86,9 +88,11 @@
 /* - - - || NAME || - - - */
 .pokemon_name
 {
+    margin: 0;
     width: initial;
     font-size: 20vw;
     font-weight: 900;
+    line-height: 100%;
     white-space: nowrap;
     text-transform: uppercase;
 }
@@ -145,41 +149,57 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
 {
-    /* - - - || IMAGE || - - - */
-    .pokemon_sprite
-    {
-        width: 85vw;
-    }
-
-    /* - - - || IMAGE || - - - */
-    .pokemon_name
-    {
-        font-size: 40vw;
-    }
-
-    /* - - - || TYPE || - - - */
-    .pokemon_type img 
-    {
-        width: 10vw;
-        margin-left: 10px;
-    }
 
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px)
 {
+    /* - - - || ID || - - - */
+    .pokemon_id
+    {
+        font-size: 15vw;
+    }
 
+    /* - - - || IMAGE || - - - */
+    .pokemon_sprite
+    {
+        width: 80vw;
+    }
+
+    /* - - - || NAME || - - - */
+    .pokemon_name
+    {
+        font-size: 30vw;
+    }
+
+    /* - - - || TYPE || - - - */
+    .pokemon_type img 
+    {
+        width: 14vw;
+        margin-left: 10px;
+    }
+
+    /* - - - || TEXT || - - - */
+    .pokemon_text
+    {
+        width: 50%;
+    }
+
+    .pokemon_text p
+    {
+        font-size: 1.5vw;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px)
 {
-    
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and down) */
 @media only screen and (max-width: 1200px)
 {
-    
+
 }

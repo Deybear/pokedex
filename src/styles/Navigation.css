@@ -1,31 +1,81 @@
+/* - - - || NAVIGATION || - - - */
 .navigation
 {
+    top: 40px;
+    left: 40px;
     width: 100%;
     z-index: 9999;
-    padding-top: 10px;
     position: absolute;
-    padding-left: 10px;
 }
 
 .navigation ul
 {
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
 }
 
-.navigation ul li
+/* - - - || LOGO || - - - */
+.nav_logo
+{
+    list-style-type: none;
+}
+
+.nav_logo img
+{
+    margin-right: 40px;
+}
+
+/* - - - || ITEM || - - - */
+.nav_item
 {
     margin-right: 40px;
     list-style-type: none;
 }
 
-.navigation ul li a
+.nav_item a
 {
     color: #000000;
     text-decoration: none;
 }
 
-.navigation ul li a:hover
+.nav_item a:hover
 {
     cursor: pointer;
+}
+
+/* - - - - - - - - - - || RESPONSIVE BREAKPOINTS || - - - - - - - - - - */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+    /* - - - || ITEM || - - - */
+    .nav_item
+    {
+        display: none;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px)
+{
+    /* - - - || ITEM || - - - */
+    .nav_item
+    {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px)
+{
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px)
+{
+    
 }
