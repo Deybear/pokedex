@@ -1,0 +1,165 @@
+/* - - - - - - - - - - || FONTS || - - - - - - - - - - */
+@font-face
+{
+    font-family: "Gisshiri";
+    src: local("Gisshiri"), url("../fonts/Gisshiri.ttf") format("truetype");
+    font-weight: bold;
+}
+
+/* - - - - - - - - - - || VARIABLE || - - - - - - - - - - */
+:root
+{
+    --bug: #92BD2D;
+    --dark: #595761;
+    --dragon: #0C6AC8;
+    --electric: #F2D94E;
+    --fairy: #EF90E6;
+    --fighting: #D3425F;
+    --fire: #FBA64C;
+    --flying: #A1BBEC;
+    --ghost: #5F6DBC;
+    --grass: #60BE58;
+    --ground: #DA7C4D;
+    --ice: #76D1C1;
+    --normal: #A0A29F;
+    --poison: #B763CF;
+    --psychic: #FA8582;
+    --rock: #C9BC8A;
+    --steel: #5795A3;
+    --water: #539DDF;
+}
+
+/* - - - - - - - - - - || CONTAINER || - - - - - - - - - - */
+.pokemon_container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* - - - || TEXTURE || - - - */
+.pokemon_texture
+{
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    filter: sepia(.5) opacity(.5); 
+}
+
+/* - - - || CARD || - - - */
+.pokemon_card
+{
+    width: 25%;
+    height: 202px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* - - - || NAME || - - - */
+.pokemon_name
+{
+    inset: 0;
+    margin: 0;
+    font-size: 120px;
+    color: #FFFFFF;
+    position: absolute;
+    line-height: 202px;
+    white-space: nowrap;
+    font-family: "Gisshiri";
+    text-transform: uppercase;
+    text-shadow: -4px 4px #000000;
+    -webkit-text-stroke: 4px #000000;
+}
+
+/* - - - || IMAGE || - - - */
+.pokemon_image
+{
+    inset: 0;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    filter: sepia(.8) brightness(.8) drop-shadow(-5px 5px #000000);
+}
+
+/* - - - || TYPES || - - - */
+.pokemon_types
+{
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    z-index: 9999;
+    align-items: center;
+    position: absolute;
+}
+
+.pokemon_types img
+{
+    width: 40px;
+    margin-left: 5px;
+    border-radius: 100%;
+    border: solid 4px #000000;
+    box-shadow: -4px 4px #000000;
+}
+
+/* - - - || FAVORITE || - - - */
+.pokemon_favorite
+{
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 100%;
+    border: solid 4px #000000;
+    box-shadow: -4px 4px #000000;
+}
+
+/* - - - || NAVIGATION || - - - */
+.pokemon_navigation
+{
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 9999999;
+    transition: 1.5s;
+    padding-top: 20px;
+    filter: opacity(0);
+    align-items: center;
+    padding-bottom: 20px;
+    background: rgb(0,0,0);
+    justify-content: space-around;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+/* - - - || HOVER || - - - */
+.pokemon_navigation:hover
+{
+    transition: 1.5s;
+    filter: opacity(1);
+}
+
+/* - - - || INPUT || - - - */
+.navigation_item input
+{
+    width: 300px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+/* - - - || BUTTON || - - - */
+.navigation_item p
+{
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 100%;
+}

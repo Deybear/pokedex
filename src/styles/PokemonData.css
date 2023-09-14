@@ -1,0 +1,154 @@
+/* - - - - - - - - - - || FONTS || - - - - - - - - - - */
+@font-face
+{
+    font-family: "Gisshiri";
+    src: local("Gisshiri"), url("../fonts/Gisshiri.ttf") format("truetype");
+    font-weight: bold;
+}
+
+/* - - - || CONTAINER || - - - */
+.data_container
+{
+    width: 100vw;
+    z-index: 999;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #FFFFFF;
+}
+
+/* - - - || TEXTURE || - - - */
+.data_texture
+{
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    position: absolute;
+    mix-blend-mode: overlay;
+    filter: sepia(.5) opacity(.5);
+}
+
+/* - - - || TYPE || - - - */
+.data_type
+{
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    z-index: 99999;
+    align-items: center;
+    position: absolute;
+}
+
+.data_type img
+{
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 100%;
+    border: solid 5px #000000;
+    box-shadow: -5px 5px #000000;
+}
+
+/* - - - || SPRITE || - - - */
+.data_sprite
+{
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    z-index: 9999;
+    position: absolute;
+    filter: sepia(.8) brightness(.8) drop-shadow(-10px 10px #000000);
+}
+
+/* - - - || CONTAINER || - - - */
+.info_container
+{
+    top: -10px;
+    left: -50px;
+    position: absolute;
+    transform: rotate(22deg);
+}
+
+/* - - - || ID || - - - */
+.data_id
+{
+    margin: 0;
+    font-size: 180px;
+    font-weight: 900;
+    line-height: 100%;
+    text-align: center;
+    text-shadow: -10px 10px #000000;
+    -webkit-text-stroke: 5px #000000;
+}
+
+/* - - - || NAME || - - - */
+.data_name
+{
+    margin: 0;
+    font-size: 280px;
+    color: #FFFFFF;
+    line-height: 100%;
+    word-break: keep-all;
+    font-family: "Gisshiri";
+    text-shadow: -10px 10px #000000;
+    -webkit-text-stroke: 5px #000000;
+}
+
+/* - - - || CONTAINER || - - - */
+.stats_container
+{
+    bottom: 80px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(20deg);
+}
+
+/* - - - || STAT || - - - */
+.stats_data
+{
+    width: 70px;
+    height: 100px;
+    display: flex;
+    padding-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    border-radius: 50px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border: solid 5px #000000;
+    box-shadow: -5px 5px #000000;
+    justify-content: space-between;
+}
+
+/* - - - || NAME || - - - */
+.stats_name
+{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* - - - || BASE || - - - */
+.stats_base
+{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    background: #FFFFFF;
+}
+
+/* - - - || BACKGROUND || - - - */
+.data_background
+{
+    right: 0;
+    z-index: -1;
+    color: #FFFFFF;
+    object-fit: cover;
+    position: absolute;
+}

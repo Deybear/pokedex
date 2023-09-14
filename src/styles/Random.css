@@ -1,0 +1,102 @@
+/* - - - - - - - - - - || FONTS || - - - - - - - - - - */
+@font-face
+{
+    font-family: "Gisshiri";
+    src: local("Gisshiri"), url("../fonts/Gisshiri.ttf") format("truetype");
+    font-weight: bold;
+}
+
+/* - - - || CONTAINER || - - - */
+.random_container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    background: #000000;
+    justify-content: center;
+}
+
+/* - - - || MASK || - - - */
+.random_mask
+{
+    -webkit-mask-image: url(../images/brush_mask.svg);
+    mask-image: url(../images/brush_mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+/* - - - || POKÉMON || - - - */
+.random_pokemon
+{
+    width: 256px;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - - - || TEXTURE || - - - */
+.random_texture
+{
+    z-index: 2;
+    width: 256px;
+    height: 100%;
+    position: absolute;
+    mix-blend-mode: overlay;
+    filter: sepia(.5) opacity(.5);
+}
+
+/* - - - || IMAGE || - - - */
+.random_sprite
+{
+    inset: 0;
+    z-index: 1;
+    width: 150%;
+    left: -50px;
+    margin: auto;
+    position: absolute;
+    filter: sepia(.8) brightness(.8) drop-shadow(-10px 10px #000000);
+}
+
+/* - - - || TYPE || - - - */
+.random_type
+{
+    z-index: 1;
+    right: 20px;
+    bottom: 40px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+}
+
+/* - - - || ICON || - - - */
+.random_type img
+{
+    width: 60px;
+    margin-top: 10px;
+    border-radius: 100%;
+    border: solid 5px #000000;
+    box-shadow: -5px 5px #000000;
+}
+
+/* - - - || NAME || - - - */
+.random_name
+{
+    margin: 0;
+    font-size: 150px;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 100%;
+    word-break: keep-all;
+    font-family: "Gisshiri";
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    text-orientation: upright;
+    text-shadow: -5px 5px #000000;
+    -webkit-text-stroke: 5px #000000;
+}

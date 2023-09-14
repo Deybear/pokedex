@@ -1,0 +1,19 @@
+/* - - - - - - - - - - || FONTS || - - - - - - - - - - */
+@font-face
+{
+    font-family: "Gisshiri";
+    src: local("Gisshiri"), url("../fonts/Gisshiri.ttf") format("truetype");
+    font-weight: bold;
+}
+
+/* - - - - - - - - - - || CONTAINER || - - - - - - - - - - */
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-image: url(../images/about_bg.svg);
+}

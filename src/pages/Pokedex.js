@@ -1,12 +1,11 @@
 import React from 'react';
+import Pokemon from '../components/pokedex/Pokemon';
 
 function Pokedex()
 {
     return (
 
-        <div>
-
-        </div>
+        <Pokemon/>
 
     );
 }

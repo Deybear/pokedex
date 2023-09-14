@@ -1,15 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
+import Random from '../components/home/Random';
 
 function Home()
 {
     return (
-
-        <div>
-
-            <Header/>
-
-        </div>
+    
+        <Random/>
 
     );
 }
