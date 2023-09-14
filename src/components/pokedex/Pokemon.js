@@ -112,23 +112,52 @@ function Pokemon()
         }
     }
 
-    //* - - - || ADD || - - - *//
-    async function addFavorite(name, id)
+    //* - - - || FAVORITE || - - - *//
+    async function favorite(name, id)
     {
-        await setFavorite(name, id);
-        console.log("Adding favorite . . ");
-        setStatus(!getStatus);
+        const pokemon = getFavoritePokemon.map((item) => (item.name));
+
+        if(getFavoritePokemon.hasOwnProperty(0) === false)
+        {
+            if(pokemon.includes(name))
+            {
+                console.log("The pokémon already exist. . .");
+            }
+            else
+            {
+                console.log("Adding favorite. . .");
+                await setFavorite(name, id);
+                setStatus(!getStatus);
+                setUpdate(!getUpdate);
+            }
+        }
+        else
+        {
+            if(pokemon.includes(name))
+            {
+                console.log("Deleting favorite. . .");
+                await deleteFavorite(name);
+                setStatus(!getStatus);
+                setUpdate(!getUpdate);
+            }
+        }
     }
+
+    //* - - - || ADD || - - - *//
+    // async function addFavorite(name, id)
+    // {
+    //     await setFavorite(name, id);
+    //     console.log("Adding favorite . . ");
+    //     setUpdate(!getUpdate);
+    // }
 
     //* - - - || DELETE || - - - *//
-    async function deleteFavorite(name)
-    {
-        await deleteFavorite(name);
-        console.log("Deleting favorite . . ");
-        setStatus(!getStatus);
-    }
-
-    console.log(getFavoritePokemon);
+    // async function deleteFavoriteP(name)
+    // {
+    //     await deleteFavorite(name);
+    //     console.log("Deleting favorite . . ");
+    //     setUpdate(!getUpdate);
+    // }
 
     return (
 
@@ -165,15 +194,7 @@ function Pokemon()
                         </div>
 
                         {/* - - - || POKÉMON FAVORITE || - - - */}
-                        {getFavoritePokemon.map((item) => (
-                            
-                            item.name === pokemon.name ?
-
-                            (<img className='pokemon_favorite' src={favorite_v2} onClick={() => deleteFavorite(pokemon.name)}/>)
-                            :
-                            (<img className='pokemon_favorite' src={favorite_v1} onClick={() => addFavorite(pokemon.name, pokemon.id)}/>)
-
-                        ))}
+                        <img className='pokemon_favorite' src={favorite_v2} onClick={() => favorite(pokemon.name, pokemon.id)}/>
 
                         </>
 

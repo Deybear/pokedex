@@ -135,8 +135,6 @@ export async function deleteFavorite(nameP)
 
         })
 
-        console.log(verification);
-
         return fetch(`https://65021745736d26322f5cbabd.mockapi.io/favorite/favorite_pokemon/${deleteID}`,
         {
             method: "DELETE",
